@@ -20,7 +20,40 @@ def dinosaur():
         timetaken == 10
     print("")
     return timetaken
-
+#reece events
+def NickiMinaj():
+    print("Nicki Minaj walks passed you")
+    print("She's walking quite slow, what do you do?")
+    print("A: Think about your students waiting in lecture and ignore Nicki Minaj")
+    print("B: Speak to Nicki Minaj, get an autograph & be late to lecture")
+    print("C: Follow Nicki Minaj, take her somewhere to eat.")
+    inp=vinput()
+    if inp == "a":
+        print("Congratulations! You put your job first")
+        timetaken = 0
+    elif inp == "b":
+        print("You just couldn't help yourself!")
+        timetaken == 5
+    elif inp == "c":
+        timetaken == 40
+    print("Tut tut Michael! Your students are all going to complain")
+    return timetaken
+def AppleStore():
+    print("You witness a riot in the AppleStore")
+    print("You see people taking IPads, IPhones and Macbooks, what do you do?")
+    print("A: Call the police.")
+    print("B: Follow the riot and see what Apple products you can get.")
+    print("C: Carry on walking to Coventry University..")
+    inp=vinput()
+    if inp == "a":
+        print("You will see this crime on crime watch")
+        timetaken = 2
+    elif inp == "b":
+        print("You will see yourself on crime watch")
+        timetaken == 10
+    elif inp == "c":
+        timetaken == 0
+    print("Well Done! You won't be late for work!")
 def attack(inv):
     timetaken=6
     return timetaken
