@@ -9,15 +9,16 @@ def dinosaur():
     print("A: Run away like a baby.")
     print("B: Fight like a man.")
     print("C: Crap in your pants and hope T-Rex gets disgusted.")
-    inp=vinput()
+    inp = vinput()
     if inp == "a":
-        print("Congratulations! You are oficially a baby! And you barely got out of this. It's a good thing T-Rex got hit by lorry.")
-        timetaken = 13
+        print("Congratulations! You are oficially a baby! And you barely got out of this. It's a god thing T-Rex got hit by lorry.")
+        timetaken = 20
     elif inp == "b":
-        print("You certainly are crazy.")
-        timetaken == 4
+        print("You certainly are crazy. Fighting a T-Rex is a mighty feat that only the main characters of Jurassic Park have ever done. Talk about being in danger...")
+        timetaken == 13
     elif inp == "c":
-        timetaken == 10
+        print("You are such a scardy cat. Oddly enough, that worked! And in a matter of minutes.")
+        timetaken == 5
     print("")
     return timetaken
 #reece events
