@@ -14,7 +14,7 @@ def dinosaur():
         print("Congratulations! You are oficially a baby! And you barely got out of this. It's a god thing T-Rex got hit by lorry.")
         timetaken = 13
     elif inp == "b":
-        print("You certainyl are crazy.")
+        print("You certainly are crazy.")
         timetaken == 4
     elif inp == "c":
         timetaken == 10
@@ -34,8 +34,42 @@ def flop(inv):
     return timetaken
 
 # V's events
-def meetwolf(inv):
-    timetaken=5
+def river():
+    print("There is a huge long river infron of you")
+    print("You are not able to cross")
+    print("What do you want to do?")
+    print("A: Swim across the river.")
+    print("B: Build a bridge to cross.")
+    print("C: Walk around to see if you can find a boat.")
+    inp=vinput()
+    if inp == "a":
+        print("Congratulations! You have the strength for this, very brave!")
+        timetaken = 6
+    elif inp == "b":
+        print("You have wasted a lot of time for this!")
+        timetaken == 15
+    elif inp == "c":
+        timetaken == 10
+    print("")
+    return timetaken
+    
+def dinosaur():
+    print("You are facing a ginormous T-Rex! And he's hungry as hell!")
+    print("He is ready to charge at you!")
+    print("Quick! What do you want to do?")
+    print("A: Run away like a baby.")
+    print("B: Fight like a man.")
+    print("C: Crap in your pants and hope T-Rex gets disgusted.")
+    inp=vinput()
+    if inp == "a":
+        print("Congratulations! You are oficially a baby! And you barely got out of this. It's a god thing T-Rex got hit by lorry.")
+        timetaken = 13
+    elif inp == "b":
+        print("You certainyl are crazy.")
+        timetaken == 4
+    elif inp == "c":
+        timetaken == 10
+    print("")
     return timetaken
 
 
