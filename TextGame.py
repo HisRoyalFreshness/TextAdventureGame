@@ -1,6 +1,26 @@
 import random
 import time
 
+#mario's events
+def dinosaur():
+    print("You are facing a ginormous T-Rex! And he's hungry as hell!")
+    print("He is ready to charge at you!")
+    print("Quick! What do you want to do?")
+    print("A: Run away like a baby.")
+    print("B: Fight like a man.")
+    print("C: Crap in your pants and hope T-Rex gets disgusted.")
+    inp=vinput()
+    if inp == "a":
+        print("Congratulations! You are oficially a baby! And you barely got out of this. It's a god thing T-Rex got hit by lorry.")
+        timetaken = 13
+    elif inp == "b":
+        print("You certainyl are crazy.")
+        timetaken == 4
+    elif inp == "c":
+        timetaken == 10
+    print("")
+    return timetaken
+
 def attack(inv):
     timetaken=6
     return timetaken
@@ -40,7 +60,7 @@ def gamerun():
         count+=1
         choice=random.randint(0,100)
         if choice==1:
-            timetaken=attack(inv)
+            timetaken=dinosaur()
         else:
             timetaken=0
             count-=1
