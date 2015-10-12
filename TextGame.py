@@ -49,25 +49,26 @@ def river():
         print("You have wasted a lot of time for this!")
         timetaken == 15
     elif inp == "c":
-        timetaken == 10
+        timetaken == 8
     print("")
     return timetaken
     
-def dinosaur():
-    print("You are facing a ginormous T-Rex! And he's hungry as hell!")
-    print("He is ready to charge at you!")
-    print("Quick! What do you want to do?")
-    print("A: Run away like a baby.")
-    print("B: Fight like a man.")
-    print("C: Crap in your pants and hope T-Rex gets disgusted.")
+def unicorn():
+    print("A unicorn is walking behind you on the way")
+    print("She is injured and hungry")
+    print("What would you like to do with the unicorn?")
+    print("A: Heal the unicorn and feed it with the food in your bag.")
+    print("B: Try to run away and hide.")
+    print("C: Play with the unicorn and don't bother about arriving late.")
     inp=vinput()
     if inp == "a":
-        print("Congratulations! You are oficially a baby! And you barely got out of this. It's a god thing T-Rex got hit by lorry.")
-        timetaken = 13
+        print("You are very kind, but unfortunately you will have no lunch.")
+        timetaken = 9
     elif inp == "b":
-        print("You certainyl are crazy.")
-        timetaken == 4
+        print("You are mean! but you will get to uni faster")
+        timetaken == 2
     elif inp == "c":
+        print("You are irresponsible!)
         timetaken == 10
     print("")
     return timetaken
