@@ -221,10 +221,23 @@ def hobo(inv):
         print("that was a good shoe shine for 4 minutes")
         
     elif inp=="b":
-        pass
+        print("The hobo roars like a man-lepoard, he then gives you a fish")
+        time.sleep(2)
+        print("You take the fish and wonder what to do with it")
+        time.sleep(2)
+        print("You shrug and take a bite out of the fish")
+        time.sleep(2)
+        print("You think, 'Man that was not worth 3 minute'")
+        timetaken=3
               
     elif inp=="c":
-        pass
+        print("Your nerdy prowess swamps his Level 3 Healer")
+        time.sleep(2)
+        print("You pwn that sucka and move on, authough it took like")
+        time.sleep(2)
+        print("To find a set of pc's to battle on, like, 30 minutes")
+        time.sleep(2)
+        timetaken=30
     
     else:
         print("You've broken reality")
