@@ -39,6 +39,7 @@ def NickiMinaj():
         timetaken == 40
     print("Tut tut Michael! Your students are all going to complain")
     return timetaken
+
 def AppleStore():
     print("You witness a riot in the AppleStore")
     print("You see people taking IPads, IPhones and Macbooks, what do you do?")
@@ -55,6 +56,9 @@ def AppleStore():
     elif inp == "c":
         timetaken == 0
     print("Well Done! You won't be late for work!")
+    return timetaken
+
+#jiminy'a shizz
 def attack(inv):
     timetaken=6
     return timetaken
