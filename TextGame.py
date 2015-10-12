@@ -13,6 +13,11 @@ def flop(inv):
     timetaken=5
     return timetaken
 
+# V's events
+def meetwolf(inv):
+    timetaken=5
+    return timetaken
+
 
 def vinput():
     while True:
