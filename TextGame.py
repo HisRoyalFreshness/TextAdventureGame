@@ -189,7 +189,47 @@ def attack(inv):
     return timetaken
 
 def hobo(inv):
-    timetaken=2
+    print("As you make your way down a man with a scraggle beard walks by, he")
+    time.sleep(2)
+    print("puts his hand in the middle of your chest and stop's you in your")
+    time.sleep(2)
+    print("tracks, he gives you a hard stare, what do you say?")
+    time.sleep(2)
+
+    print("Do you A:")
+    time.sleep(1)
+    print('"Dont touch me! I AM A TEACHER MOTHERFLIPPER"')
+    time.sleep(1)
+    print("Do you B:")
+    time.sleep(1)
+    print('"Im so sorry sir please dont take my smart watch pls"')
+    time.sleep(1)
+    print('"Look here gutterbum, i will pwn you, I have a level 80 paladin n00b"')
+    time.sleep(1)
+    print()
+    inp=vinput()
+    
+    if inp=="a":
+        print("That filthy hobo suddenly falls to the floor and kisses your shoes")
+        time.sleep(2)
+        print("you think to yourself *finally, the respect I deserve*")
+        time.sleep(2)
+        print("Once the hobo is done, you continue on your way")
+        time.sleep(2)
+        print("you walk off, shoes shiny, wallet stolen and happy")
+        time.sleep(2)
+        print("that was a good shoe shine for 4 minutes")
+        
+    elif inp=="b":
+        pass
+              
+    elif inp=="c":
+        pass
+    
+    else:
+        print("You've broken reality")
+        timetaken=0
+            
     return timetaken
 
 def flop(inv):
@@ -210,9 +250,9 @@ def river():
         timetaken = 6
     elif inp == "b":
         print("You have wasted a lot of time for this!")
-        timetaken == 15
+        timetaken = 15
     elif inp == "c":
-        timetaken == 8
+        timetaken =8
     print("")
     return timetaken
     
@@ -283,7 +323,7 @@ def gamerun():
     for count in range(0,100):
         used.append(count)
     count=0
-    while count < 10:
+    while count < 3:
         count+=1
         choice=random.randint(0,99)
         if used[choice]!=101:
@@ -292,17 +332,17 @@ def gamerun():
             if choice==1:
                 timetaken=attack(inv)
             elif choice==2:
-                timetaken=river(inv)
+                timetaken=river()
             elif choice==3:
-                timetaken=unicorn(inv)
+                timetaken=unicorn()
             elif choice==4:
-                timetaken=prisoner(inv)
+                timetaken=prisoner()
             elif choice==5:
-                timetaken=dinosaur(inv)
+                timetaken=dinosaur()
             elif choice==6:
-                timetaken=NickiMinaj(inv)
+                timetaken=NickiMinaj()
             elif choice==7:
-                timetaken=AppleStore(inv)
+                timetaken=AppleStore()
             else:
                 userpl=False
                 count-=1
