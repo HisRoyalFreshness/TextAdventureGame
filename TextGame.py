@@ -11,7 +11,7 @@ def dinosaur():
     print("C: Crap in your pants and hope T-Rex gets disgusted.")
     inp=vinput()
     if inp == "a":
-        print("Congratulations! You are oficially a baby! And you barely got out of this. It's a god thing T-Rex got hit by lorry.")
+        print("Congratulations! You are oficially a baby! And you barely got out of this. It's a good thing T-Rex got hit by lorry.")
         timetaken = 13
     elif inp == "b":
         print("You certainly are crazy.")
@@ -73,6 +73,25 @@ def unicorn():
     print("")
     return timetaken
 
+def prisoner():
+    print("On the way, you have met with 3 prisoners who escaped from jail, they look very scary")
+    print("They are trying to steal your stuff and hurt you")
+    print("Oh no! What are you going to do?")
+    print("A: Take out your phone, call the police and run!!!")
+    print("B: Give them all your stuff and run away.")
+    print("C: Use your boxing skills and and fight for your life.")
+    inp=vinput()
+    if inp == "a":
+        print("The police are on their way!")
+        timetaken = 5
+    elif inp == "b":
+        print("Oh no!")
+        timetaken == 7
+    elif inp == "c":
+        print("Wow! You are very brave, are all dead but the police are coming after you hahaha!)
+        timetaken == 10
+    print("")
+    return timetaken
 
 def vinput():
     while True:
