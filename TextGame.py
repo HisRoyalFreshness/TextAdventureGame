@@ -102,7 +102,7 @@ def unicorn():
         print("You are mean! but you will get to uni faster")
         timetaken == 2
     elif inp == "c":
-        print("You are irresponsible!)
+        print("You are irresponsible!")
         timetaken == 10
     print("")
     return timetaken
@@ -122,7 +122,7 @@ def prisoner():
         print("Oh no!")
         timetaken == 7
     elif inp == "c":
-        print("Wow! You are very brave, are all dead but the police are coming after you hahaha!)
+        print("Wow! You are very brave, are all dead but the police are coming after you hahaha!")
         timetaken == 10
     print("")
     return timetaken
