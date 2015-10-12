@@ -1,24 +1,23 @@
 import random
-
-#mario test
+import time
 
 def attack(inv):
-    time=0
-    return inv,time
+    timetaken=6
+    return timetaken
 
 def hobo(inv):
-    time=0
-    return inv,time
+    timetaken=2
+    return timetaken
 
 def flop(inv):
-    time=5
-    return inv,time
+    timetaken=5
+    return timetaken
 
 
 def vinput():
     while True:
         try:
-            inp=input("Please enter your choice! ")
+            inp=input("Please enter your choice! ").lower()
             if inp in ["a","b","c"]:
                 break
             else:
@@ -27,27 +26,47 @@ def vinput():
             print("That's not anything!")
     return inp
 
-
-def main():
-    print("Welcome to the game")
+def gamerun():
     totaltime=0
+    timetaken=0
     count=0
     inv=[]
     while count < 10:
         count+=1
         choice=random.randint(0,100)
         if choice==1:
-            time=attack(inv)
-        elif choice==2:
-            time=hobo(inv)
-        elif choice==3:
-            time=flop(inv)
+            timetaken=attack(inv)
         else:
-            time=0
+            timetaken=0
             count-=1
-        totaltime+=time
-            
-    
+        totaltime=totaltime+timetaken
+    print("You've finally made it to university, and you were only {0} minutes late!".format(totaltime))
+    time.sleep(2)      
+def main():
+    print("---Welcome to Michaels Excuses Game!---")
+    print()
+    print("The game where you try to get in on time to your lessons!")
+    print()
+    print("Would you Like to play?")
+    play=input("y/n?").lower()
+    if play =="y":
+        print("Lets go!")
+        time.sleep(2)
+    else:
+        print("{0}? Who cares of course you want to play!".format(play))
+    quits=False
+    while not quits:
+        gamerun()
+        again=input("That was great wasn't it? would you like to play again(y/n)? ").lower()
+        if again=="y":
+            print("Let's go again!")
+            time.sleep(2)
+        elif again=="n":
+            quits=True
+            print("Thanks for playing!")
+            time.sleep(2)
+        else:
+            print("That's not really a good input is it?")
 
 
 if __name__=="__main__":
