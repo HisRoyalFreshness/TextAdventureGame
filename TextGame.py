@@ -34,9 +34,9 @@ def NickiMinaj():
         timetaken = 0
     elif inp == "b":
         print("You just couldn't help yourself!")
-        timetaken == 5
+        timetaken = 5
     elif inp == "c":
-        timetaken == 40
+        timetaken = 40
     print("Tut tut Michael! Your students are all going to complain")
     return timetaken
 
@@ -52,9 +52,9 @@ def AppleStore():
         timetaken = 2
     elif inp == "b":
         print("You will see yourself on crime watch")
-        timetaken == 10
+        timetaken = 10
     elif inp == "c":
-        timetaken == 0
+        timetaken = 0
     print("Well Done! You won't be late for work!")
     return timetaken
 
