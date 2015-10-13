@@ -15,10 +15,10 @@ def dinosaur():
         timetaken = 20
     elif inp == "b":
         print("You certainly are crazy. Fighting a T-Rex is a mighty feat that only the main characters of Jurassic Park have ever done. Talk about being in danger...")
-        timetaken == 13
+        timetaken = 13
     elif inp == "c":
         print("You are such a scardy cat. Oddly enough, that worked! And in a matter of minutes.")
-        timetaken == 5
+        timetaken = 5
     print("")
     return timetaken
 #reece events
@@ -120,7 +120,7 @@ def attack(inv):
         
         inp2=vinput()
 
-        if inp =="a":
+        if inp2 =="a":
             print("you are the worst kind of person, however the giant fish robot thing accepts")
             time.sleep(2)
             print("your offering of helpless children, you wipe the sweat off your brow and continue")
@@ -128,7 +128,7 @@ def attack(inv):
             print("on your way to university, with a guilt free mind, you horrible person")
             timetaken=5
                 
-        elif inp=="b":
+        elif inp2=="b":
             print("you turn round to face the beast, you are immediately stood on and")
             time.sleep(2)
             print("smeared along the pavement, thankfully, the robophibian thing has ")
@@ -140,7 +140,7 @@ def attack(inv):
             print("it takes ten minutes for you to come back to life because it does ok")
             timetaken=10
             
-        elif inp=="c":
+        elif inp2=="c":
             print("You give in to CyborgWhaleManThing but as you wait for your fate to arrive")
             time.sleep(2)
             print("Jackie Chan turns up and kicks you so hard you fly into the sky Team Rocket")
@@ -302,10 +302,10 @@ def prisoner():
         timetaken = 5
     elif inp == "b":
         print("Oh no!")
-        timetaken == 7
+        timetaken = 7
     elif inp == "c":
         print("Wow! You are very brave, are all dead but the police are coming after you hahaha!")
-        timetaken == 10
+        timetaken = 10
     print("")
     return timetaken
 
@@ -333,6 +333,7 @@ def gamerun():
     time.sleep(4)
     print("you must get to college on time, lets hope nothing slows you down...")
     time.sleep(4)
+    print()
     for count in range(0,100):
         used.append(count)
     count=0
@@ -340,8 +341,8 @@ def gamerun():
         count+=1
         choice=random.randint(0,99)
         if used[choice]!=101:
-            print(used[choice])
             used[choice]=101
+            userpl=True
             if choice==1:
                 timetaken=attack(inv)
             elif choice==2:
@@ -359,8 +360,10 @@ def gamerun():
             else:
                 userpl=False
                 count-=1
-        if userpl:
-            input=("Press enter to continue... ")
+            if userpl:
+                print()
+                a=input("Press enter to continue... ")
+                print()
             
         else:
             used[choice]=101
