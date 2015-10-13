@@ -1,7 +1,7 @@
 import random
 import time
-#test
-#mario's events
+
+#Мario's events
 def dinosaur():
     print("You are facing a ginormous T-Rex! And he's hungry as hell!")
     print("He is ready to charge at you!")
@@ -11,16 +11,56 @@ def dinosaur():
     print("C: Crap in your pants and hope T-Rex gets disgusted.")
     inp = vinput()
     if inp == "a":
-        print("Congratulations! You are oficially a baby! And you barely got out of this. It's a god thing T-Rex got hit by lorry.")
+        print("Congratulations! You are oficially a baby!")
+        print("And you barely got out of this.")
+        print("It's a god thing T-Rex got hit by lorry.")
+        print("Now weren't those some fun 20 minutes?")
         timetaken = 20
     elif inp == "b":
-        print("You certainly are crazy. Fighting a T-Rex is a mighty feat that only the main characters of Jurassic Park have ever done. Talk about being in danger...")
+        print("You certainly are crazy. Fighting a T-Rex is a mighty feat that only")
+        print("the main characters of Jurassic Park have ever done.")
+        print("Talk about being in danger...")
+        print("Add 13 minutes to your time, Mr. Norris.")
         timetaken = 13
     elif inp == "c":
-        print("You are such a scardy cat. Oddly enough, that worked! And in a matter of minutes.")
+        print("You are such a scardy cat. Oddly enough, that worked! And in just 5 minutes.")
         timetaken = 5
     print("")
     return timetaken
+def kidnapping():
+    print("Run, Michael, run!")
+    time.sleep(1)
+    print("Oh, wait. Why is that black van stopping right in front of you?")
+    time.sleep(2)
+    print("What the...")
+    time.sleep(2)
+    print("STOP!")
+    time.sleep(1)
+    print("Don't hit--")
+    for count in range(0,3):
+        time.sleep(1)
+        print(".")
+    print("Rise and shine! And welcome to today episode of 'Where the hell am I?' starring...")
+    time.sleep(1)
+    print("YOU")
+    print("So, what do you think happened?")
+    print("A: You got kidnapped.")
+    print("B: You got kidnapped.")
+    print("C: You got kidnapped.")
+    inp = vinput()
+    print("Wow! Now wasn't that hard to figure out!")
+    print("Looks like you have nothing to do about it, too...")
+    time.sleep(2)
+    print("Might as well feel forlorn, because--")
+    time.sleep(2)
+    print("WHAM!")
+    print("'Here's your friendly neighbourhood Spider-Man to the rescue!'")
+    print("And just in the nick of time! It only took him 3 days to find you.")
+    print("Better late than never!")
+    time.sleep(1)
+    print("Let's keep going!")
+    timetaken = 4320
+
 #George
 def Money():
     print("You are walking to university - nervous because no one did the worksheet again!")
@@ -328,7 +368,7 @@ def river():
         print("You have wasted a lot of time for this!")
         timetaken = 15
     elif inp == "c":
-        timetaken =8
+        timetaken =8  # V, are you gonna leave this so? :D
     print("")
     return timetaken
     
@@ -345,10 +385,10 @@ def unicorn():
         timetaken = 9
     elif inp == "b":
         print("You are mean! but you will get to uni faster")
-        timetaken == 2
+        timetaken = 2
     elif inp == "c":
         print("You are irresponsible!")
-        timetaken == 10
+        timetaken = 10 # V, remember that one equals sign is used for assigning a value toa variable, and two are used to check whether a variable is equal to the specified value
     print("")
     return timetaken
 
@@ -420,6 +460,8 @@ def gamerun():
                 timetaken=NickiMinaj()
             elif choice==7:
                 timetaken=AppleStore()
+            elif choice==8:
+                timetaken==kidnapping()
             else:
                 userpl=False
                 count-=1
@@ -467,4 +509,3 @@ def main():
 
 if __name__=="__main__":
     main()
-    
