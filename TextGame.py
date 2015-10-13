@@ -1,6 +1,6 @@
 import random
 import time
-
+#test
 #mario's events
 def dinosaur():
     print("You are facing a ginormous T-Rex! And he's hungry as hell!")
