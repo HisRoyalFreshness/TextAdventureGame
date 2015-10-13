@@ -21,6 +21,69 @@ def dinosaur():
         timetaken = 5
     print("")
     return timetaken
+#George
+def Money():
+    print("You are walking to university - nervous because no one did the worksheet again!")
+    print("Then, outta nowhere, big bag with around 1 bil. CASH! No ID, nothing.")
+    print("Now it's your chance. What you gonna do?")
+    print("A: Take the money. Save them somewhere until you uni is over for today. And rock on!")
+    print("B: Wait for a while in case someone decides to come for his money.Don't forget you have got lectures.")
+    print("C: Take them to the police. ")
+    inp = vinput()
+    if inp == "A":
+        print("Honestly, who wouldn't do that!:D")
+        timetaken = 12
+    elif inp == "B":
+        print("A guy came and got the money. You are both late for lectures and not a billionaire.")
+        timetaken = 20
+    elif inp == "C":
+        print("You did the right thing. Nice. You were late for lectures but became a hero.")
+        timetaken = 15
+    print("")
+    return timetaken
+
+def Shoplifting():
+    print("While walking to uni you decide to enter a shop to get a snack")
+    print("You see one of your student there.")
+    print("OMG. What is he doing. He just put one xbox live card and one PSN Plus card into his pocket!")
+    print("Oh, no. What you gonna do? You are late for your lectures already.")
+    print("A: Tell the staff about that.")
+    print("B: Do not tell the staff but have a conversation with the student when you get out of the shop.")
+    print("C: Just ignore everything and wait for your turn at the cash register.")
+    inp = vinput()
+    if inp == "A":
+        print("You and your student should go to the police. You have missed the all day at uni. They will cut your wage because you were late. They don't care where have you been.")
+        timetaken = 20
+    elif inp == "B":
+        print("After you got out of the shop you spoke with the student. You are very angry and late for your lecture.")
+        timetaken = 11
+    elif inp == "C":
+        print("This is bad. You are breaking the law. At least you have plenty of before the lecture starts.")
+        timetaken = 7
+    print("")
+    return timetaken
+
+def Lostman():
+    print("While walking to uni a man stops you and asks you for directions. He is obviously lost.")
+    print("You know where he should go and he asks you if you could help him get there.")
+    print("You tell him to get a cab but he has no money and he can't speak English.")
+    print("So now what? Don't forget you have a lecture in 15 minutes!")
+    print("A: You walk all the way with him to the destination.")
+    print("B: You decide to find him a cab which would take him to the wanted destination and give him money for the cab")
+    print("C: You just leave him.")
+    inp = vinput()
+    if inp == "A":
+        print("You are a nice person. But you are also so late.")
+        timetaken = 20
+    elif inp == "B":
+        print("There are no cab today huh? You waited 10 minutes for a cab to show up. BTW you are a good person")
+        timetaken = 9
+    elif inp == "C":
+        print("This is bad. You know that, right? At least you were in time.")
+        timetaken = 5
+    print("")
+    return timetaken
+
 #reece events
 def NickiMinaj():
     print("Nicki Minaj walks passed you")
