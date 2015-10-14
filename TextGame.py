@@ -456,6 +456,8 @@ def gamerun():
         if used[choice]!=101:
             used[choice]=101
             userpl=True
+            #crude way of running all the functions but i dont know
+            #a better way of doing it 
             if choice==1:
                 timetaken=attack(inv)
             elif choice==2:
