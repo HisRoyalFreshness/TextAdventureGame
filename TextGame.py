@@ -413,6 +413,7 @@ def prisoner():
     return timetaken
 
 def vinput():
+    #validates inputs so it can't crash and the choice can only be a, b or c
     while True:
         try:
             inp=input("Please enter your choice! ").lower()
@@ -421,28 +422,37 @@ def vinput():
             else:
                 print("That's not a valid input")
         except:
+            #not strictly needed but in case something could happen
+            #this is there as a fall back just in case, slightly unnecesary
             print("That's not anything!")
     return inp
 
 def gamerun():
+    #set initial values for variables
     totaltime=0
     timetaken=0
     count=0
     inv=[]
     used=[]
     print("It's 8.45, you've been up until 3am playing the Battlefront Beta")
+    #makes the program wait before printing the next line
     time.sleep(4)
     print("Your girlfriend kicks you out of bed and forces you downstairs")
     time.sleep(4)
     print("you must get to college on time, lets hope nothing slows you down...")
     time.sleep(4)
     print()
+    #repeats 100 times just for expansions sake
+    #compiles a list to cover each of the 100 potential slots
     for count in range(0,100):
         used.append(count)
     count=0
+    #repeats 3 times so 3 events happen every game
     while count < 3:
         count+=1
         choice=random.randint(0,99)
+        #if number has already been generated then it will not run it and will change
+        #that value to 101 which is my value for its not a valid choice
         if used[choice]!=101:
             used[choice]=101
             userpl=True
@@ -465,15 +475,19 @@ def gamerun():
             else:
                 userpl=False
                 count-=1
+            #when an event is run then the user must hit enter to continue
             if userpl:
                 print()
                 a=input("Press enter to continue... ")
                 print()
             
         else:
+            #will not count that as one of the 3 options
             used[choice]=101
             timetaken=0
             count-=1
+        #sets the user played value to true which only gets changed
+        #when the user has a go 
         userpl=True 
         totaltime=totaltime+timetaken
         
@@ -481,31 +495,34 @@ def gamerun():
     time.sleep(2)
     
 def main():
+    #display main menu
     print("---Welcome to Michaels Excuses Game!---")
     print()
     print("The game where you try to get in on time to your lessons!")
     print()
     print("Would you Like to play?")
+    #no matter what input you choose you can play whatever you want
     play=input("y/n? ").lower()
     if play =="y":
         print("Lets go!")
         time.sleep(2)
     else:
         print("{0}? Who cares of course you want to play!".format(play))
-    quits=False
-    while not quits:
+    while True:
+        #calls the gamerun function
         gamerun()
         again=input("That was great wasn't it? would you like to play again(y/n)? ").lower()
         if again=="y":
             print("Let's go again!")
             time.sleep(2)
         elif again=="n":
-            quits=True
+            break
             print("Thanks for playing!")
             time.sleep(2)
         else:
             print("That's not really a good input is it?")
 
+#if this is the program you click on then it will run this function
 
 if __name__=="__main__":
     main()
