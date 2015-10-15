@@ -363,13 +363,17 @@ def river():
     inp=vinput()
     if inp == "a":
         print("Congratulations! You have the strength for this, very brave!")
-        timetaken = 6
+        time.sleep(2)
+        timetaken =6
     elif inp == "b":
         print("You have wasted a lot of time for this!")
-        timetaken = 15
+        time.sleep(2)
+        timetaken =15
     elif inp == "c":
-        timetaken =8  # V, are you gonna leave this so? :D
-    print("")
+        print("Hurray! You managed to find a boat and cross the river!")
+        time.sleep(2)
+        timetaken =8  
+
     return timetaken
     
 def unicorn():
@@ -382,14 +386,16 @@ def unicorn():
     inp=vinput()
     if inp == "a":
         print("You are very kind, but unfortunately you will have no lunch.")
-        timetaken = 9
+        time.sleep(1)
+        timetaken =9
     elif inp == "b":
         print("You are mean! but you will get to uni faster")
-        timetaken = 2
+        time.sleep(1)
+        timetaken =2
     elif inp == "c":
         print("You are irresponsible!")
-        timetaken = 10 # V, remember that one equals sign is used for assigning a value toa variable, and two are used to check whether a variable is equal to the specified value
-    print("")
+        time.sleep(1)
+        timetaken =10
     return timetaken
 
 def prisoner():
@@ -402,14 +408,16 @@ def prisoner():
     inp=vinput()
     if inp == "a":
         print("The police are on their way!")
-        timetaken = 5
+        time.sleep(2)
+        timetaken =5
     elif inp == "b":
         print("Oh no!")
-        timetaken = 7
+        time.sleep(2)
+        timetaken =7
     elif inp == "c":
         print("Wow! You are very brave, are all dead but the police are coming after you hahaha!")
-        timetaken = 10
-    print("")
+        time.sleep(2)
+        timetaken =10
     return timetaken
 
 def vinput():
